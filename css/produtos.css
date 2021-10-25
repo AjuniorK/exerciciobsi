@@ -302,6 +302,11 @@
     border-radius: 10px;
 }
 
+.sold{
+    background: #44bd32;
+    color: #ffffff;
+}
+
 
 .list-view-box{
     margin-bottom: 30px;

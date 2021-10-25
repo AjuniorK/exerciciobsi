@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <!-- Login/Cadastro CSS -->
-    <link rel="stylesheet" href="css/login.css">
+    <!-- Product CSS -->
+    <link rel="stylesheet" href="css/produtos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
         <!-- Start Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
           <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
-          <div class="container">
+            <div class="container">
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,20 +63,20 @@
                     <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contato</a></li>
                     </ul>
                 </div>
 
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="search"><a href="#" style="color: #F3C30F;"><i class="loginIcon">Login</i></a></li>
+                        <li class="search"><a href="login.html"><i class="loginIcon">Login</i></a></li>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                         <li class="side-menu">
                         <a href="carrinho.html">
-                            <i class="fa fa-shopping-bag" ></i>
-                            <p >Meu Carrinho  </p> <p id="qtdCarrinho"></p>
+                            <i class="fa fa-shopping-bag" style="color: #F3C30F;"></i>
+                            <p style="color: #F3C30F;">Meu Carrinho  </p> <p id="qtdCarrinho" style="color: #F3C30F;"></p>
                         </a>
                                     </li>
                     </ul>
@@ -100,43 +100,47 @@
     </div>
     <!-- End Top Search -->
 
-
-    <div class="container login-box">
-        <div class="d-flex justify-content-center h-100">
-            <div class="card">
-                <div class="card-header">
-                    <h2>Login</h2>
-                </div>
-                <div class="card-body">
-                    <form>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="username">
-                            
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="password">
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn">
-                        </div>
-                    </form>
-                </div>
-                <div class="box-footer-card">
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-center links ">
-                            <a href="paginas/casdastro.html">Cadastrar</a>
-                        </div>
+    <!-- Start Cart  -->
+    <div class="cart-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-main table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Nome</th>
+                                    <th>Preço</th>
+                                    <th>Descrição</th>
+                                    <th>Remover</th>
+                                </tr>
+                            </thead>
+                            <tbody id="carrinhoBody">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
+
+            <div class="row my-5">
+                <div class="col-lg-8 col-sm-12"></div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="order-box">
+                        <h3>Resumo do Pedido</h3>
+                        <div class="d-flex">
+                            <h3>Sub Total</h3>
+                            <div class="ml-auto font-weight-bold" id="total">R$  </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-12 d-flex shopping-box"><a href="#" class="ml-auto btn hvr-hover">Checkout</a> </div>
+            </div>
+
         </div>
     </div>
+    <!-- End Cart -->
 
 
     <!-- Start Footer  -->
@@ -169,7 +173,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/carrinho.js"></script>
+    <!-- <script src="js/cardsProdutos.js"></script> -->
 </body>
 
 </html>
