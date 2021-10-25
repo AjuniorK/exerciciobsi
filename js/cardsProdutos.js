@@ -4,13 +4,30 @@ var listaProdutos = [[0, '124cm x 124cm', 'produto1.jpg', 'Caixa de Exemplo 1', 
                     [3, '54cm x 44cm', 'produto4.jpg', 'Caixa de Exemplo 4', 'R$ 9.35', false],
                     [4, '84cm x 64cm', 'produto5.jpg', 'Caixa de Exemplo 5', 'R$ 13.35', false],
                     [5, '84cm x 34cm', 'produto6.jpg', 'Caixa de Exemplo 6', 'R$ 7.35', false],
-                    [7, '164cm x 14cm', 'produto7.jpg', 'Caixa de Exemplo 7', 'R$ 45.35', false],
-                    [8, '74cm x 64cm', 'produto8.jpg', 'Caixa de Exemplo 8', 'R$ 15.35', false],
-                    [9, '104cm x 104cm', 'produto9.jpg', 'Caixa de Exemplo 9', 'R$ 23.35', false]];
+                    [6, '164cm x 14cm', 'produto7.jpg', 'Caixa de Exemplo 7', 'R$ 45.35', false],
+                    [7, '74cm x 64cm', 'produto8.jpg', 'Caixa de Exemplo 8', 'R$ 15.35', false],
+                    [8, '104cm x 104cm', 'produto9.jpg', 'Caixa de Exemplo 9', 'R$ 23.35', false]];
 
 var carrinho = [];
 
 window.onload = function(){
+    json = window.localStorage.getItem("carrinho");
+    produtos = JSON.parse(json);
+
+    id_produtos = []
+
+    for(var i = 0; i < produtos.length; i++)
+    {
+        id_produtos.push(produtos[i][0]);
+    }
+
+    for(var i = 0; i < listaProdutos.length; i++)
+    {   
+        if (id_produtos.includes(listaProdutos[i][0]))
+            listaProdutos[i][5] = true;
+    }
+
+
     montarCardProdutos();
     pegarQtdProdutos();
 }
@@ -46,7 +63,7 @@ function montarCardProdutos(){
         }
         else
         {
-            conteudo += '<a class="cart" href="#">';
+            conteudo += '<a class="cart sold" href="#">';
             conteudo += 'Comprado';
             conteudo += '</div>';
             conteudo += '</div>';
@@ -64,6 +81,12 @@ function montarCardProdutos(){
 function comprar(id){
 
     listaProdutos[id][5] = true;
+
+    json = window.localStorage.getItem("carrinho");
+    carrinho = JSON.parse(json);
+
+    console.log(id);
+    console.log(listaProdutos[id]);
     
     carrinho.push(listaProdutos[id]);
 
@@ -80,7 +103,6 @@ function pegarQtdProdutos(){
 	
     json = window.localStorage.getItem("carrinho");
     produtos = JSON.parse(json);
-    console.log(produtos.length);
 
     conteudo = ''+  produtos.length + '';
 
