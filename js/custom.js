@@ -1,3 +1,24 @@
+var carrinho = [];
+
+window.onload = function(){
+    pegarQtdProdutos();
+}
+
+function pegarQtdProdutos(){
+
+	document.getElementById("qtdCarrinho").innerHTML = "";
+	
+    json = window.localStorage.getItem("carrinho");
+    produtos = JSON.parse(json);
+    console.log(produtos.length);
+
+    conteudo = ''+  produtos.length + '';
+
+        
+    document.getElementById("qtdCarrinho").innerHTML += conteudo;
+    
+}
+
 (function($) {
     "use strict";
 	

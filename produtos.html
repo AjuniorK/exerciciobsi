@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Liberum - Projeto de Prog Web</title>
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- Font Awsome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Product CSS -->
+    <link rel="stylesheet" href="css/produtos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@1,300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="container slogan"><h5>A plataforma de comércio eletrônico para todos os [ nichos ]</h5></div>
+                </div>
+            </div>  <!--ROW-->
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                </div>
+                <!-- End Header Navigation -->
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="about.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Depoimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="loginIcon">Login</i></a></li>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+                          <a href="#">
+                            <i class="fa fa-shopping-bag"></i>
+                            <p>Meu Carrinho  </p> <p id="qtdCarrinho"></p>
+                          </a>
+						            </li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+            </div>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start Shop Page  -->
+    <div class="shop-box-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-sm-12 col-xs-12 shop-content-right">
+                    <div class="right-product-box">
+                        <div class="product-categorie-box">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
+                                    <div class="row" id="divProdutos">
+                                        <!-- <div id="divProdutos"></div> -->
+                                        <!-- <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">124cm x 124cm</p>
+                                                    </div>
+                                                    <img src="images/produto1.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 1</h4>
+                                                    <h5> R$ 5.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">74cm x 124cm</p>
+                                                    </div>
+                                                    <img src="images/produto2.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 2</h4>
+                                                    <h5> R$ 8.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">34cm x 74cm</p>
+                                                    </div>
+                                                    <img src="images/produto3.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 3</h4>
+                                                    <h5> R$ 15.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">14cm x 124cm</p>
+                                                    </div>
+                                                    <img src="images/produto4.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 4</h4>
+                                                    <h5> R$ 6.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">94cm x 174cm</p>
+                                                    </div>
+                                                    <img src="images/produto5.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 5</h4>
+                                                    <h5> R$ 28.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">24cm x 94cm</p>
+                                                    </div>
+                                                    <img src="images/produto6.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 6</h4>
+                                                    <h5> R$ 12.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">104cm x 54cm</p>
+                                                    </div>
+                                                    <img src="images/produto7.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 7</h4>
+                                                    <h5> R$ 38.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">64cm x 14cm</p>
+                                                    </div>
+                                                    <img src="images/produto8.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 8</h4>
+                                                    <h5> R$ 18.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    <div class="type-lb">
+                                                        <p class="sale">64cm x 14cm</p>
+                                                    </div>
+                                                    <img src="images/produto9.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Caixa de Exemplo 9</h4>
+                                                    <h5> R$ 8.35</h5>
+                                                    <a class="cart" href="#">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Shop Page -->
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-caixa">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                    <h3>Nos siga em nossas redes sociais</h3>
+                    <br>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+
+
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/cardsProdutos.js"></script>
+</body>
+
+</html>

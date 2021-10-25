@@ -918,20 +918,10 @@
      margin: 0 auto;
      text-align: center;
      display: block;
+     height: 350px;
+     width: 350px;
 }
- .type-lb{
-     position: absolute;
-     top: 0px;
-     right: 0px;
-     z-index:8;
-}
- .type-lb .sale{
-     background: #b0b435;
-     color: #ffffff;
-     padding: 2px 10px;
-     font-weight: 700;
-     text-transform: uppercase;
-}
+
  .type-lb .new{
      background: #000000;
      color: #ffffff;
@@ -948,15 +938,7 @@
      font-weight: 700;
      padding-bottom: 15px;
 }
- .why-text h5{
-     font-size: 18px;
-     font-family: 'Poppins', sans-serif;
-     padding: 4px;
-	 display: inline-block;
-	 background: #b0b435;
-	 color: #ffffff;
-     font-weight: 600;
-}
+
  .mask-icon{
      width: 100%;
      height: 100%;
@@ -2588,95 +2570,6 @@
 	border: none;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Numans');
-
-html,body{
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/backgroundLogin.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
-}
-
-.container{
-height: 100%;
-align-content: center;
-}
-
-.card{
-height: 370px;
-margin-top: auto;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
-}
-
-.card-header h2{
-color: whitesmoke;
-}
-
-.input-group-prepend span{
-width: 50px;
-background-color: #F3C30F;
-color: black;
-border:0 !important;
-}
-
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
-}
-
-.remember{
-color: white;
-}
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
-
-.login_btn{
-color: black;
-background-color: #F3C30F;
-width: 100px;
-}
-
-.login_btn:hover{
-color: black;
-background-color: white;
-}
-
-.card-footer{
-    background-color: #2980b9;
-    border-radius: 10px !important;
-    width: 50% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 5% !important;
-}
-
-.card-footer:hover{
-    background-color: #F3C30F;
-    border-radius: 10px !important;
-    width: 50% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 5% !important;
-}
-
-.card-footer a{
-    color: whitesmoke;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
 
 
 
